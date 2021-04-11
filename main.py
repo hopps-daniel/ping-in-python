@@ -12,11 +12,11 @@ os.system('cls')
 
 #port = [5730, 5731, 5732, 5733, 5734, 5735, 5736, 5737, 5738, 5739]
 
-print("Tú IP externa es: {} ".format(external_ip))
-print("Tú IP interna es: {} ".format(ip_address1))
+print("Your external IP is: {} ".format(external_ip))
+print("Your internal IP is: {} ".format(ip_address1))
 print('-' * 60)
 
-ip_to_check = input('Ingresa la IP para hacer ping: ')
+ip_to_check = input('Enter the IP you would like to PING: ')
 
 print('-' * 60)
 
@@ -28,13 +28,7 @@ os.system('ping -n 10 {0}'.format(ip_to_check))
 
 print('-' * 60)
 
-print("El mínimo es la mejor conexión posible.")
-print("El máximo la peor conexión que se registro.")
-print("La media es lo que tendrás normalmente durante la conexión con el otro usuario.")
-print('-' * 60)
-print("Para juegos online el máximo recomendable como promedio es 150ms, Juega con precaución.")
-print('-' * 60)
-input('Presiona ENTER para salir.')
+input('Press ENTER to exit.')
 
 def kill_by_process_name_shell(name):
     os.system("taskkill /f /im " + name)
